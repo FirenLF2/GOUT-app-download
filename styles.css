@@ -1,0 +1,29 @@
+* {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.divider1 {
+    border: 2px solid black;
+    margin: 60px auto;
+    height: 500px;
+    min-width: 400px;
+    max-width: 1100px;
+}
+
+.divider2 {
+    border: 2px solid red;
+    margin: 0px auto 60px;
+    height: 500px;
+    min-width: 400px;
+    max-width: 1100px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}

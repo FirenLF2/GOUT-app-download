@@ -4,25 +4,30 @@
 }
 
 body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(134,134,134,1) 20%, rgba(241,242,242,1) 66%);
     margin: 0;
     padding: 0px 30px;
 }
 
 .divider1 {
-    border: 2px solid black;
+    background-color: white;
     margin: 60px auto;
-    height: 500px;
+    height: 499px;
     min-width: 400px;
     max-width: 1100px;
     border-radius: 60px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .divider2 {
-    border: 2px solid red;
+    background-color: white;
     margin: 0px auto 60px;
-    height: 500px;
+    height: 700px;
     min-width: 400px;
     max-width: 1100px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -37,7 +42,7 @@ ul {
     max-width: 1100px;
     margin: 31px auto;
     box-sizing: border-box;
-    border: 2px solid blue;
+    
     padding: 0px;
     overflow: hidden;
     border-bottom-left-radius: 60px;
@@ -66,5 +71,60 @@ ul li:hover {
     background: #6d6d6d2b;
     transition: 0.4s;
     cursor: pointer;
+}
+
+.divider1:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+    animation: ease-in;
+    transition: 0.5s;
+}
+
+.divider1:not(:hover) {
+    transition: 1s;
+    animation: ease-out;
+    
+}
+
+section .logo {
+    font-size: 25px;
+}
+
+
+section {
+    
+    margin-bottom: 1px;
+    min-height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: lightgray 2px solid;
+    border-top: lightgray 2px solid;
+    
+}
+
+section:nth-child(5) {
+    height: 285px;
+
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 30px 35px 10px 35px;
+    margin: 20px 0px 20px 0;
+    
+    
+}
+
+section > span.logo{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+section > span.text2 {
+    font-size: 20px;
+    font-weight:600;
+    padding-top: 3px;
+
 }
 

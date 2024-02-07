@@ -1,14 +1,18 @@
 * {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(134,134,134,1) 20%, rgba(241,242,242,1) 66%);
+    background: repeating-linear-gradient(-55deg, #656464, #bdbaba 10px, #fffdfd 10px, #d8d8d8 50px );
     margin: 0;
     padding: 0px 30px;
 }
+
+
+
+
+/* Two main blocks -------------- ↓ ↓ ↓*/
 
 .divider1 {
     background-color: white;
@@ -23,12 +27,16 @@ body {
 .divider2 {
     background-color: white;
     margin: 0px auto 60px;
-    height: 700px;
+    height: 385px;
     min-width: 400px;
     max-width: 1100px;
-    border-radius: 4px;
+    border-radius: 14px;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
+
+/* Two main blocks -------------- ↑ ↑ ↑*/
+
+
 
 img {
     display: block;
@@ -41,8 +49,7 @@ ul {
     min-width: 400px;
     max-width: 1100px;
     margin: 31px auto;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
     padding: 0px;
     overflow: hidden;
     border-bottom-left-radius: 60px;
@@ -54,11 +61,14 @@ ul li {
     display: flex;
     background-color: #2b2b2b2b;
     margin: 1px;
-    padding: 32px;
-    
+    padding: 32px;    
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
 ul li span:nth-child(1){
@@ -66,11 +76,21 @@ ul li span:nth-child(1){
 
 }
 
+ul > a > li > span > i.fa {
+    font-size: 20px;
+    
+}
+
+
+
+/* Hover Animations ---------------------- ↓ ↓ ↓*/
+
 ul li:hover {
     transform: scale(1.06);
     background: #6d6d6d2b;
     transition: 0.4s;
     cursor: pointer;
+    color: rgb(198, 0, 198);
 }
 
 .divider1:hover {
@@ -85,6 +105,22 @@ ul li:hover {
     
 }
 
+.divider2:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+    animation: ease-in;
+    transition: 0.5s;
+}
+
+.divider2:not(:hover) {
+    transition: 1s;
+    animation: ease-out;
+    
+}
+
+/* Hover Animations ---------------------- ↑ ↑ ↑*/
+
+
+
 section .logo {
     font-size: 25px;
 }
@@ -92,26 +128,24 @@ section .logo {
 
 section {
     
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     min-height: 90px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    border-bottom: lightgray 2px solid;
+    border-bottom: lightgray 1px solid;
     border-top: lightgray 2px solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 }
 
-section:nth-child(5) {
-    height: 285px;
-
-}
 
 h1 {
     font-size: 30px;
     font-weight: lighter;
     padding: 30px 35px 10px 35px;
-    margin: 20px 0px 20px 0;
+   
     
     
 }
@@ -119,12 +153,74 @@ h1 {
 section > span.logo{
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 3px;
 }
 
 section > span.text2 {
+
     font-size: 20px;
-    font-weight:600;
-    padding-top: 3px;
+    font-weight:lighter;
+    padding-right: 25px;
+    padding-left: 5px;
+    padding-top: 6px;
 
 }
 
+p {
+    margin: 0px 0px 10px;
+    padding: 0px 20px 0;
+    border-radius: 14px;
+}
+
+ol {
+    list-style-type: circle;
+    list-style-position: inside;
+    
+}
+
+ol li {
+    padding: 3px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+
+
+/* Media Queries ----------------------- ↓ ↓ ↓ */
+
+@media (max-width: 968px){
+    .divider2 {
+        height: 425px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 924px){
+    .divider2 {
+        height: 455px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 830px){
+    .divider2 {
+        height: 485px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 782px){
+    .divider2 {
+        height: 515px;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 566px){
+    .divider2 {
+        height: 575px;
+        transition: 0.2s;
+    }
+}
+
+/* Media Queries ----------------------- ↑ ↑ ↑*/

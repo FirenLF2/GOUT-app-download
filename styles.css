@@ -27,7 +27,7 @@ body {
 .divider2 {
     background-color: white;
     margin: 0px auto 60px;
-    height: 385px;
+    height: 390px;
     min-width: 400px;
     max-width: 1100px;
     border-radius: 14px;
@@ -90,7 +90,7 @@ ul li:hover {
     background: #6d6d6d2b;
     transition: 0.4s;
     cursor: pointer;
-    color: rgb(198, 0, 198);
+    color: rgb(125, 125, 125);
 }
 
 .divider1:hover {
@@ -218,7 +218,7 @@ ol li {
 
 @media (max-width: 566px){
     .divider2 {
-        height: 575px;
+        height: 535px;
         transition: 0.2s;
     }
 }
